@@ -21,7 +21,7 @@ CreFetch 是一款基于 C# WinForms 开发的多线程、断点续传下载工�
 
 - **操作系统**：Windows 7 SP1 及以上（建议 Windows 10/11）
 - **运行时**：[.NET Framework 4.7.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472) 或 [.NET 6/7/8](https://dotnet.microsoft.com/download)（如果运行预编译的程序则无需安装）
-- **硬盘空间**：至少 50 MB（用于程序及临时文件）
+- **硬盘空间**：至少 100 MB（用于程序及临时文件）
 - **网络**：支持 HTTP/HTTPS 协议，服务器需支持 `Accept-Ranges: bytes`（若不支持则仅能完整下载）
 
 ---
