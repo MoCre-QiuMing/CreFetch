@@ -137,18 +137,14 @@ show_notification = true
                 Visible = true
             };
             trayIcon.DoubleClick += (s, e) => { this.Show(); this.WindowState = FormWindowState.Normal; };
-            trayIcon.ShowBalloonTip(2000, "CreFetch 已启动", "复制链接即可自动嗅探", ToolTipIcon.Info);
+            trayIcon.ShowBalloonTip(2000, "CreFetch 已启动", "复制链接即可快速下载", ToolTipIcon.Info);
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            string[] args = Environment.GetCommandLineArgs();
-            if (args.Length > 1 && args[1] == "--minimized")
-            {
-                this.WindowState = FormWindowState.Minimized;
-                this.ShowInTaskbar = false;
-                this.Hide();
-            }
+            this.WindowState = FormWindowState.Minimized;
+            this.ShowInTaskbar = false;
+            this.Hide();
         }
 
         private void OnUrlDetected(string url)

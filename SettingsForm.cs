@@ -164,7 +164,7 @@ namespace CreFetch
                     if (key == null) return;
                     if (enable)
                     {
-                        key.SetValue(keyName, $"\"{exePath}\" --minimized");
+                        key.SetValue(keyName, $"\"{exePath}\"");
                     }
                     else
                     {
